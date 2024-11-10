@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fffbb2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topo-fixo {
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  z-index: 1000;
+  border-bottom: 50px solid red 10;
+}
+.topo {
+  display: flex;
+  justify-content: space-between; /* Espaça os elementos 'esquerdo' e 'direito' */
+  background-color: #241107;
+  border-bottom: 50px solid red 10;
+}
+
+.direito {
+  display: flex;
+  align-items: center;
+}
+
+.direito ul {
+  display: flex;
+  list-style: none;
+}
+
+.direito li {
+  margin-right: 20px;
+}
+
+.direito li a,
+.esquerdo {
+  color: white;
+  text-decoration: none;
+}
+.direito a:hover {
+  text-decoration: underline;
+  background-color: #3a211383;
+}
+.esquerdo h2 {
+  font-family: "Dancing Script", serif;
+}
+
+.imagensdotopo {
+  padding-top: 5vh;
+  justify-content: space-around;
+  background-color: #241107;
+}
+.imagensdotopo :first-child {
+  margin-left: 2vw;
+}
+.imagensdotopo img {
+  display: inline;
+  width: 19%;
+  padding: 0;
+  border-radius: 6%;
+  padding-left: auto;
+}
+.imgmobile1 {
+  display: none;
+}
+.previa {
+  text-align: justify;
+}
+.previa h1 {
+  text-align: center;
+  padding: 0.5%;
+}
+.previa p {
+  padding: 0 2%;
+}
+#sobrenos {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  flex-direction: column;
+}
+.texto-sobrenos {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 200;
+}
+.texto-sobrenos p {
+  padding: 0 10%;
+}
+.img-logo {
+  width: 40vw;
+  height: 80vh;
+  opacity: 80%;
+  position: absolute;
+  top: 430px;
+  right: 100px;
+}
+.itenstopo {
+  position: relative;
+  right: 100px;
+}
+.lista-itens {
+  text-align: start;
+  padding: 0 10%;
+  margin: 0;
+}
+.titulosecao {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.lista-itens li {
+  font-family: "Dancing Script", serif;
+  font-size: 30px;
+  text-align: start;
+}
+
+.texto16px {
+  font-size: 16px;
+}
+.lista-itens li::first-letter {
+  font-size: 45px;
+}
+.texto-sobrenos span {
+  font-weight: bold;
+}
+#nossocatalogo {
+  padding-top: 3%;
+  text-align: center;
+}
+
+#nossocatalogo ul {
+  padding-top: 3%;
+  text-align: center;
+}
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .direito li a {
+    font-size: 0.9rem; /* Reduz um pouco o tamanho da fonte */
+  }
+}
+
+@media (max-width: 600px) {
+  .esquerdo h2 {
+    font-family: "Dancing Script", serif;
+    text-align: center;
+  }
+  .topo-fixo {
+    position: relative;
+    width: 100vw;
+  }
+  .topo {
+    flex-direction: column; /* Torna o topo mais flexível em telas pequenas */
+    height: auto;
+    padding: 10px; /* Ajusta o padding para telas menores */
+    font-size: large;
+  }
+  .direito {
+    border: 1px solid white;
+    text-align: center;
+  }
+  .direito ul {
+    flex-direction: column; /* Coloca os links em coluna */
+    align-items: center; /* Centraliza os links horizontalmente */
+  }
+
+  .direito li {
+    margin: 10px 0; /* Dá mais espaço entre os links */
+    width: 100vw;
+  }
+
+  .direito li a {
+    font-size: 1rem; /* Mantém o tamanho legível em dispositivos móveis */
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .previa p {
+    padding-right: 43px;
+
+    padding-left: 43px;
+    padding-bottom: 20px;
+  }
+  .texto-sobrenos p {
+    padding: 5px 43px;
+  }
+  #sobrenos img {
+    display: none;
+  }
+  .img-logo {
+    width: 40vw;
+    height: 80vh;
+    opacity: 80%;
+  }
+  .imagensdotopo {
+    display: none;
+  }
+  .img-logo-mobile {
+    width: 40vw;
+    height: 80vh;
+    opacity: 80%;
+    display: block;
+  }
+  .imgmobile {
+    display: flex;
+    flex-direction: row;
+  }
+  .imgmobile1 {
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 25vh;
+    align-items: center;
+  }
+  main {
+    display: block;
+  }
+}
+/*Não está responsivo para telas menores*/
