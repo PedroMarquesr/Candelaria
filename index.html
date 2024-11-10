@@ -153,7 +153,10 @@
             </li>
           </ul>
         </nav>
-
+        <div class="imgmobile">
+          <img class="imgmobile1" src="imagens/vela3topo.jpg" alt="Vela3" />
+          <img class="imgmobile1" src="imagens/vela4topo.jpg" alt="vela4" />
+        </div>
         <nav id="secaoimpulso">
           <h3 class="titulosecao">O Impulso (Energia e Motivação)</h3>
 
@@ -273,13 +276,15 @@
           Viu a nossa diversidade de velas aromáticas ?! E cada uma com sua
           caracteristica única.
         </h4>
+        <br />
         <h5>Quer ficar por dentro de nossas novidades ?</h5>
+        <br />
+        <p>Se sim, cadastre-se abaixo</p>
+        <form action="">
+          <fieldset class="formularionovidades">
+            <div class="caixaformulario">
+              <label for="nome">Nome completo: </label>
 
-        <div class="formularionovidades">
-          <form action="">
-            <fieldset>
-              <legend>Se sim! Cadastre-se abaixo!</legend>
-              <label for="nome">Nome completo:</label>
               <input
                 type="text"
                 id="nome"
@@ -287,7 +292,9 @@
                 placeholder="Escreva seu nome"
                 required
               />
-              <label for="email">Email:</label>
+            </div>
+            <div class="caixaformulario">
+              <label for="email">Email: </label>
               <input
                 type="email"
                 id="email"
@@ -295,13 +302,20 @@
                 placeholder="Escreva seu email"
                 required
               />
-              <label for="datanascimento">Data de nascimento</label>
+            </div>
+            <div class="caixaformulario">
+              <label for="datanascimento">Data de nascimento: </label>
               <input
                 type="date"
                 id="datanascimento"
                 name="data de nascimento"
                 required
               />
+            </div>
+            <div class="caixaformulario">
+              <label for="secaofavorita"
+                >Nos conte qual vela agradou mais o seu lar:
+              </label>
               <select
                 title="Nos conte qual vela agradou mais o seu lar"
                 name="secao_favorita_do_usuario"
@@ -333,10 +347,12 @@
                   <option value="Jubileu">Jubileu</option>
                 </optgroup>
               </select>
-              <button type="submit">Enviar</button>
-            </fieldset>
-          </form>
-        </div>
+            </div>
+          </fieldset>
+          <div class="container-botao">
+            <button class="botao-enviar" type="submit">Enviar</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer>
