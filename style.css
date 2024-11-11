@@ -27,13 +27,11 @@ a {
   width: 100%;
   margin-top: 0;
   z-index: 1000;
-  border-bottom: 50px solid red 10;
 }
 .topo {
   display: flex;
   justify-content: space-between; /* Espaça os elementos 'esquerdo' e 'direito' */
   background-color: #241107;
-  border-bottom: 50px solid red 10;
 }
 
 .direito {
@@ -155,7 +153,8 @@ a {
 }
 
 #recebanovidades {
-  border: 1px solid red;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   text-align: center;
   background-color: #241107;
   color: #fffbb2;
@@ -186,11 +185,11 @@ a {
 }
 .container-botao {
   width: 100vw;
-  border: 1px solid red;
 }
 .botao-enviar {
   text-align: center;
 }
+
 button {
   width: 15%;
   height: 15%;
@@ -198,7 +197,30 @@ button {
   font-weight: bold;
   border-radius: 15%;
 }
+footer {
+  text-align: center;
+  width: 100vw;
+}
 
+#rodape p {
+  font-family: "Dancing Script", serif;
+  font-size: 30px;
+}
+
+#faleconosco {
+  font-style: italic;
+  background-color: #241107;
+  color: #fffbb2;
+  text-align: start;
+}
+
+#faleconosco li {
+  font-size: 11px;
+}
+#faleconosco a {
+  text-decoration: underline;
+  color: #fffbb2;
+}
 /* Media query para telas menores */
 @media (max-width: 768px) {
   .direito li a {
@@ -251,6 +273,9 @@ button {
   }
   .texto-sobrenos p {
     padding: 5px 43px;
+  }
+  .itenstopo {
+    padding-left: 40vw;
   }
   #sobrenos img {
     display: none;
