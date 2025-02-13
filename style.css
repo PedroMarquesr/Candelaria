@@ -1,3 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fffbb2;
+  overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -117,6 +125,7 @@ a {
 .itenstopo {
   position: relative;
   right: 100px;
+  max-width: 100%;
 }
 .lista-itens {
   text-align: start;
@@ -184,7 +193,15 @@ a {
   padding-right: 1vw;
 }
 .container-botao {
-  width: 100vw;
+  width: 100%;
+}
+button {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  background-color: #fffbb2;
+  font-weight: bold;
+  border-radius: 15%;
 }
 .botao-enviar {
   text-align: center;
@@ -212,6 +229,7 @@ footer {
   background-color: #241107;
   color: #fffbb2;
   text-align: start;
+  width: 100vw;
 }
 
 #faleconosco li {
@@ -281,7 +299,7 @@ footer {
     display: none;
   }
   .img-logo {
-    width: 40vw;
+    width: 100vw;
     height: 80vh;
     opacity: 80%;
   }
